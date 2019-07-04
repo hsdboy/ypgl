@@ -1,0 +1,25 @@
+<view class="content">
+
+  <view class="search">
+    <input bindinput='search' class="" placeholder='搜索' />
+  </view>
+  <view bindtap="chooseType" class="type">
+   {{array[index]}}
+    <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+  <view class="picker">
+    {{type}}  V{{array[index]}}
+  </view>
+</picker>
+
+  </view>
+  <view>
+    <view class="item" bindtap='choose' wx:for="{{datas}}" wx:for-item="item" data-index="{{index}}" data-id="{{item._id}}" wx:key="">
+      <icon type="{{item.success}}" size="25" color="blue" />
+      <view>
+        <view>药品名称：{{item.name}}</view>
+        <view>当前库存：{{item.count}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<button class="right" bindtap='right'>{{state}}</button>

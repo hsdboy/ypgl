@@ -1,0 +1,41 @@
+@import "../../style/iconfont.wxss";
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+}
+.title{
+  height: 90rpx;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 90rpx;
+  color:#aaaaaa;
+  font-size: 30rpx;  
+}
+.jilu{
+  background: white;
+  height: 80rpx;
+  color: #777777;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.jil{
+  color: blue;
+  border-bottom:1rpx solid blue; 
+}
+.content>view{
+  background: white;
+  align-items: center;
+  height: 150rpx;
+  border: 1px solid #aaaaaa
+}
+.content>view>view{
+  padding-left:10rpx; 
+  width: 80%;
+  font-size: 30rpx;
+  color: #666666;
+  line-height: 70rpx;
+}

@@ -1,0 +1,14 @@
+<view class="body">
+<view class="head">
+  <view class="text">国药药品管理   <view>您身边的药品管家</view>     </view>
+</view>
+<view class="content">
+  <navigator url="../enter/enter?state=1"> <view> <icon class="iconfont icon-kufangguanli_jiaodian green"></icon>  药品入库</view></navigator>
+   <navigator url="../enter/enter?state=0"> <view><icon class="iconfont icon-kufangguanli_jiaodian red"></icon> 药品出库</view></navigator>
+    <navigator url="../mine/mine"><view><icon class="iconfont icon-icon_chanpin"></icon>我的药品</view></navigator>
+    <navigator url="../customer/customer"><view><icon class="iconfont icon-kehu"></icon>我的客户</view></navigator>
+   <navigator url="../income/income"> <view><icon class="iconfont icon-jine"></icon>盈收记录</view></navigator>
+      <navigator url="../operate/operate"> <view><icon class="iconfont icon-caozuorizhi"></icon>操作记录</view></navigator>
+      <navigator url="../echart/echart"> <view><icon class="iconfont icon-tubiaozhexiantu"></icon>财务报表</view></navigator>
+</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/income/income.wxml-->
+<view class="body">
+  <view class="item" wx:for="{{datas}}"  data-id="{{item._id}}" wx:key="">
+    <view>
+      <view>收款金额{{item.money}}</view>
+      <view>日期：{{item.date}}</view>
+    </view>
+ </view>
+</view>
+

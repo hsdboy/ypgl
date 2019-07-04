@@ -1,0 +1,15 @@
+  <view class="jilu">
+    <view class="{{ji1}}" bindtap='count'> 出入库数量</view>
+    <view class="{{ji2}}" bindtap="money"> 出入库金额</view>
+  </view>
+  <view>七日入库总量 ：{{incount}}</view>
+    <view>七日出库总量 ：{{outcount}}</view>
+      <view>七日入库金额 ：{{inmoney}}</view>
+        <view>七日出库金额 ：{{outmoney}}</view>
+          <view>七日盈利 ：{{outmoney-inmoney}}</view>
+<view class="container"  style="left:{{count}}">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="container" style="left:{{money}}">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ em }}"></ec-canvas>
+</view>

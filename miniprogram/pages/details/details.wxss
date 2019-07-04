@@ -1,0 +1,63 @@
+/* pages/enter2/enter2.wxss */
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+  padding-top:30rpx; 
+}
+.product{
+  background: white;
+  width: 90%;
+  height: 400rpx;
+  border-radius:20rpx; 
+  padding:0 20rpx;
+  margin: 0 auto;
+  line-height: 70rpx;
+  font-size: 32rpx;
+}
+.title{
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1rpx solid #eeeeee;
+}
+
+.four{
+  display: flex;
+  justify-content: space-between;
+}
+.four view:nth-of-type(1){
+  display: flex;
+}
+.reduce,.add,.num{
+  width: 70rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 7rpx;
+  border: 1rpx solid #dddddd;
+}
+.delete{
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  width: 120rpx;
+  height: 50rpx;
+  background: red;
+  color:white;
+  font-size: 30rpx; 
+}
+.right{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: rgb(112, 112, 248);
+  font-size: 30rpx;
+  color: white;
+  position: fixed;
+  bottom:50rpx;
+  left: 0;
+  right: 0;
+  margin:auto;
+}

@@ -1,0 +1,68 @@
+<!--pages/income/income.wxml-->
+<view class="body">
+  <view class="title">
+    <view>今日库存：{{allnumi-allnumo}}</view> 
+    <view>今日盈利：￥{{allmoneyo-allmoneyi}}</view>  
+  </view>
+  <view class="time" bindtap="chodate">
+    {{date}} V 
+  </view>
+  <view>
+  <view class="top">概览：</view>  
+  <view class="inout">
+    <view>
+       入库数量   <view>{{allnumi}}</view>
+      </view>
+      <view>
+       出库数量   <view>{{allnumo}}</view>
+      </view>
+  </view>
+  <view class="inout">
+      <view>
+       入库支出总额   <view>{{allmoneyi}}</view>
+      </view>
+      <view>
+        出库应收总额  <view>{{allmoneyo}}</view>
+      </view>
+  </view>
+
+  </view>
+  <view class="jilu">
+    <view class="{{ji1}}" bindtap='in'> 入库记录</view>
+    <view class="{{ji2}}" bindtap="out"> 出库记录</view>
+  </view>
+  <view class="item" wx:for="{{datas}}"  data-id="{{item._id}}" wx:key="">
+    <view>
+      <view>药品名称：{{item.name}}</view>
+      <view>数量：{{item.count}}</view>
+    </view>
+ </view>
+<view wx:if="{{isShowDates}}" class="showDates">
+ <modal show="true" height='60%;width:100%' bindcancel="cancel" bindconfirm='confirm'>
+      <view class="time_text">{{year}}-{{month}}-{{day}}</view>
+      <view class="time_title">
+        <view class="time_title_text">年</view>
+        <view class="time_title_text">月</view>
+        <view class="time_title_text">日</view>
+      </view>
+    
+      <picker-view wx:if="{{years.length>0 && months.length>0 && days.length>0}}"  indicator-style="height: 50px;" class="view_picker" style="width: 100%;" value="{{value}}" bindchange="bindChange" >
+     <!--  <text>{{years}}</text>
+      <text>{{months}}</text>
+      <text>{{days}}</text> -->
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{years}}" class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{months}}" class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{days}}"  class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+      </picker-view>
+  </modal>
+</view>
+
+
+</view>
+

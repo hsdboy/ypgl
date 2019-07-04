@@ -1,0 +1,34 @@
+<!--pages/enter2/enter2.wxml-->
+<view class="body">
+  <view class="content">
+    <view class="product" wx:for="{{datas}}" wx:for-item="item" wx:key="">
+      <view class="title">
+        <view>产品名称：
+          <text>  {{item.name}}</text> </view>
+        <view>当前库存：
+          <text>{{item.count}}</text>
+        </view>
+      </view>
+      <view class="">
+        <view>产品规格：{{item.number}}/{{item.unit}}</view>
+        <view>进货价格：{{item.stock}}元</view>
+        <view>零售价格：{{item.retail}}元</view>
+        <view bindtap='click'   data-index="{{index}}" class="four">
+          <view>{{state}}量：
+            <view class="math" id='reduce'>-</view>
+            <view class="num">{{count[index]}}</view>
+            <view class="math" id='add'>+</view>
+          </view>
+          <view id='delete'>X删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button bindtap='right' class="right">
+    确认{{state}}
+  </button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="收款" confirm-text="提交" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+ <view bindtap='name'>{{name}}</view>
+  <input bindinput='money' type='text' placeholder="请输入金额..." auto-focus/>
+</modal>

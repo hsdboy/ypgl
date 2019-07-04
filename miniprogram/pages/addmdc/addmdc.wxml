@@ -1,0 +1,57 @@
+<form bindsubmit='addmdc'>
+  <view class="box">
+    基本信息
+    <view>
+      <view>产品名称:
+        <input value="{{datas.name}}" name="name" placeholder='请输入产品名称' />
+      </view>
+      <view>登记编号:
+        <input value="{{datas.code}}" name="code" placeholder='请输入登记编号' />
+      </view>
+      <view>生产厂家:
+        <input  value="{{datas.foctor}}" name="foctor" placeholder='请输入生产厂家' />
+      </view>
+      <view>产品条码:
+        <input disabled value="{{datas._id}}" name="_id" placeholder='自动获取产品条码' />
+      </view>
+    </view>
+    产品类别(可在我的->产品类别里添加)
+    <view>
+      <view> 产品类别
+       
+          <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+  <view class="picker">
+     <input value="{{datas.type}}" name="type" placeholder='  请选择产品类别' />{{array[index]}}
+  </view>
+</picker>
+      </view>
+    </view>
+    产品规格
+    <view>
+      <view>包装含量
+        <input value="{{datas.number}}" name="number" placeholder='请输入包装含量' />
+      </view>
+      <view>包装单位
+        <input value="{{datas.unit}}" name="unit" placeholder='请选择包装单位' />
+      </view>
+    </view>
+    产品价格
+    <view>
+      <view>进货价格
+        <input value="{{datas.stock}}" name="stock"  placeholder='请输入进货价格' />
+      </view>
+      <view>零售价格
+        <input value="{{datas.retail}}" name="retail"  placeholder='请选择零售价格' />
+      </view>
+    </view>
+    现有库存
+    <view>
+      <view>现有库存
+        <input value="{{datas.count}}" name="count" placeholder='请输入现有库存' />
+      </view>
+    </view>
+  </view>
+  <view class="button">
+ <button class="right" form-type='submit'>{{button}}</button>
+  </view>
+</form>

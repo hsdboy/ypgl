@@ -1,0 +1,27 @@
+<!--pages/enter2/enter2.wxml-->
+<view class="body">
+  <view class="product">
+    <view class="title">
+      <view>产品名称：
+        <text>  {{data.name}}</text> </view>
+      <view>当前库存：
+        <text>{{data.count}}</text>
+      </view>
+    </view>
+    <view class="">
+      <view>产品规格：{{data.number}}/{{data.unit}}</view>
+      <view>进货价格：{{data.stock}}元</view>
+      <view>零售价格：{{data.retail}}元</view>
+    </view>
+    <view class="title">
+      <view>产品类别：{{data.type}}</view>
+      <view>生产厂家：{{data.foctor}}</view>
+    </view>
+  </view>
+    <view>
+产品条码：{{data._id}}
+    </view>
+  <button bindtap='updown' class="right">
+    返回
+  </button>
+</view>

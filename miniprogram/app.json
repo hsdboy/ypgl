@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/type/type",
+    "pages/customer/customer",
+    "pages/payment/payment",
+    "pages/mine/mine",
+    "pages/addmdc/addmdc",
+    "pages/enter2/enter2",
+    "pages/myself/myself",
+    "pages/enter/enter",
+    "pages/income/income",
+    "pages/operate/operate",
+    "pages/details/details",
+    "pages/addguest/addguest"
+  ],
+  "window": {
+    "backgroundColor": "#cccccc",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#5555ee",
+    "navigationBarTitleText": "国药药品管理-首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/mine.png",
+        "iconPath": "images/mine1.png",
+        "pagePath": "pages/myself/myself",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

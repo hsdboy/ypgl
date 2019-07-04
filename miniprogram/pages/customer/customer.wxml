@@ -1,0 +1,23 @@
+<view class="body">
+  <view class="title">
+    <input  bindinput='search' placeholder='输入客户姓名进行搜索'></input>
+    <button bindtap='add'>添加</button>
+  </view>
+  <view>
+    <view class="item" wx:for="{{datas}}" wx:for-item="item" bindtap='choose'  data-name="{{item.name}}" data-id="{{item._id}}" wx:key="{{index}}">
+      <view>
+        <view class="img">{{item.first}}</view>
+      </view>
+      <view>
+        <view class="name">{{item.name}}</view>
+        <view class="phone">联系电话：{{item.phone}}</view>
+      </view>
+
+      <view class="money">欠款{{item.money}}</view>
+
+    </view>
+  </view>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="收款" confirm-text="提交" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+  <input bindinput='money' type='text' placeholder="请输入金额..." auto-focus/>
+</modal>

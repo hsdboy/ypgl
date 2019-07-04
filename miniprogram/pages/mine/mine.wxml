@@ -1,0 +1,27 @@
+<view class="box">
+  <view class="search">
+    <input class=""  bindinput='search' placeholder='搜索' />
+  </view>
+  <view class="type">
+  <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+  <view class="picker">
+       {{type}}  V {{array[index]}}
+  </view>
+</picker>
+
+  </view>
+  <view>
+    <view class="item" wx:for="{{datas}}" wx:for-item="item"  bindtap='choose' data-id="{{item._id}}" wx:key="{{index}}">
+      <icon class="iconfont icon-bianji" size="25" />
+      <view>
+        <view>药品名称：{{item.name}}</view>
+        <view>当前库存：{{item.count}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="button">
+  <navigator url="../addmdc/addmdc">
+    <button class="right">新增药品</button>
+  </navigator>
+</view>

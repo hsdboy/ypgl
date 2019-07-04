@@ -1,0 +1,34 @@
+<form bindsubmit='addguest'>
+  <view class="body">
+    <view class="title">
+      <view> 基本信息</view>
+    </view>
+    <view class="content">
+      <view wx:if="{{state==1}}">
+        <view> 客户编号:</view>
+        <input placeholder='自动分配' name="_id" value="{{datas._id}}"></input>
+      </view>
+      <view>
+        <view> 客户编号:</view>
+        <input placeholder='必填，姓名首字母' name="first" value="{{datas.first}}"></input>
+      </view>
+      <view>
+        <view> 客户姓名:</view>
+        <input placeholder='必填，客户姓名' name="name" value="{{datas.name}}"></input>
+      </view>
+      <view>
+        <view> 欠款金额:</view>
+        <input placeholder='' name="money" value="{{datas.money}}"></input>
+      </view>
+      <view>
+        <view>联系电话:</view>
+        <input placeholder='联系电话' name="phone" value="{{datas.phone}}" />
+      </view>
+      <view>
+        <view> 联系地址:</view>
+        <input placeholder='联系地址' name="address" value="{{datas.address}}" />
+      </view>
+    </view>
+    <button class="right" form-type='submit' bindtap='right'>{{button}}</button>
+  </view>
+</form>

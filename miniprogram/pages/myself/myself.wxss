@@ -1,0 +1,107 @@
+@import "../../style/iconfont.wxss";
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee
+}
+.back{
+  width: 180vw;
+  height: 180vw;
+  border-radius:50%;
+  margin: -160vw auto;
+  position: fixed;
+  left: -40vw;
+  background: rgb(133, 133, 253);
+  z-index: 0;
+}
+.outsite{
+  position: relative;
+  z-index: 3;
+  width: 92%;
+  height: 320rpx;
+  top:20rpx;
+  border-radius:20rpx;
+  margin: 0 auto;
+  background: black;
+
+}
+.white{
+  color:white;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.insite{
+  width: 100%;
+  height: 260rpx;
+  border-radius:20rpx;
+  margin: 120rpx auto 0;
+  background: white; 
+}
+.bottom{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 150rpx;
+  background: white;
+  position: fixed;
+  bottom:0;
+  color:black;
+  font-size: 30rpx;
+}
+.bottom navigator{
+  display: block;
+  width: 30%;
+  height: 180rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+.bottom>view{
+  width: 30%;
+  height: 180rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+.bottom .right{
+    color: blue;
+}
+.icon-fl-jia{
+  display: block;
+  font-size: 70rpx;
+  margin-top:20rpx; 
+  margin-bottom: 0;
+}
+.icon-wode{
+  display:block;
+  font-size: 70rpx;
+  margin-top:20rpx;
+  margin-bottom: 0;  
+}
+.outsite .insite image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  position: relative;
+  top: -50rpx;
+  margin: 0 auto;
+}
+.insite{
+  text-align: center;
+}
+.text{
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 32rpx;
+}
+.ul{
+  margin-top:40rpx; 
+  background: white;
+  padding-left:20rpx; 
+}
+.li{
+border-bottom:1rpx solid #eeeeee;
+line-height: 50rpx;
+font-size: 34rpx; 
+}

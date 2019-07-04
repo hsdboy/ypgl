@@ -1,0 +1,16 @@
+<view class="box">
+<view class="title">产品类别</view>
+
+  <view>
+     <view class="item" wx:for="{{datas}}" wx:for-item="item" data-id="{{item._id}}" bindtap='choose' wx:key="{{index}}">
+      <view>{{item.name}}</view>
+      <icon class="iconfont icon-yao"  />
+    </view>
+  </view>
+</view>
+<view class="button">
+    <button bindtap='add' class="right">添加类别</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="添加类别" confirm-text="添加" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+  <input bindinput='type' type='text' placeholder="请输入产品类别..." auto-focus/>
+</modal>

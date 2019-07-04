@@ -1,0 +1,90 @@
+/* pages/income/income.wxss */
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+}
+.title{
+  height: 90rpx;
+  width: 100%;
+  background:#ffff97c0 ;
+  display: flex;
+  justify-content: space-between;
+  line-height: 90rpx;
+  color:#e68b16
+}
+.top{
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.time{
+  width: 100%;
+  height: 90rpx;
+  background: rgb(255, 255, 255);
+  font-size: 35rpx;
+  line-height: 90rpx;
+}
+.inout{
+  height: 90rpx;
+  line-height: 90rpx;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+.inout view{
+  display: flex;
+  justify-content: space-between;
+}
+.now{
+  margin: 20rpx 0;
+}
+.jilu{
+  background: white;
+  height: 80rpx;
+  color: #777777;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.jil{
+  color: blue;
+  border-bottom:1rpx solid blue; 
+}
+.item{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 50rpx auto;
+  border: 1rpx solid #eeeeee;
+  display:flex;
+  align-items: center;
+  background: white
+}
+.time_text{
+  text-align: center;
+}
+.showDates{
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 36rpx;
+  z-index: 9999;
+}
+.time_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.view_picker{
+  height: 300rpx;
+}
+.view_picker_text{
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

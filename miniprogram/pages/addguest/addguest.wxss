@@ -1,0 +1,31 @@
+/* miniprogram/pages/addguest/addguest.wxss */
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+  font-size:30rpx; 
+}
+.body>view{
+    padding: 15rpx;
+}
+.title{
+  height: 60rpx;
+}
+.content{
+  background: white
+}
+.content>view{
+  height: 80rpx;
+  display: flex;
+  line-height: 50rpx
+}
+.right{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #5555ee;
+  border-radius:0;
+  color: white;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,19 @@
+<view class="body">
+  <view class="jilu">
+   <view class="{{ji0}}" bindtap='week'>近一周记录 </view>
+    <view class="{{ji1}}" bindtap='month'>近一个月记录 </view>
+    <view class="{{ji2}}" bindtap='all'> 全部记录</view>
+  </view>
+  <view class="content">
+    <view class="item" wx:for="{{data}}" wx:for-item="item" wx:key="">
+      <view>
+        <view>操作类型：
+          <span>{{item.info}}</span>
+        </view>
+        <view>操作时间：
+          <span>{{item.date}}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
